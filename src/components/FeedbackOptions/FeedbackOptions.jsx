@@ -17,5 +17,6 @@ export const FeedbackOptions = ({ options, onClickHendler }) => {
   );
 };
 FeedbackOptions.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
  onClickHendler: PropTypes.func
 };
