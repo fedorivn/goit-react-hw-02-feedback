@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Container, SectionTitle, StatList, StatEl } from './Statistics.styled';
 
 export const Statistics = ({ allStates, total, positivePersentage }) => (
@@ -15,4 +16,9 @@ export const Statistics = ({ allStates, total, positivePersentage }) => (
     </Container>
 )
 
-
+Statistics.propTypes = {
+    allStates: PropTypes.arrayOf(PropTypes.string).isRequired,
+    total: PropTypes.number.isRequired,
+    positivePersentage:PropTypes.number.isRequired,
+  };
+  
